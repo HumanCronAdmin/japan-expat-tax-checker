@@ -1,3 +1,5 @@
+if ("serviceWorker" in navigator) { navigator.serviceWorker.register("sw.js"); }
+
 document.addEventListener("DOMContentLoaded", function() {
   var answers = {};
   var currentStep = 0;

@@ -1,56 +1,51 @@
-# Multi-Step Form Example
+<p align="center">
+  <img src="favicon.svg" width="64" height="64" alt="Japan Expat Tax Checker">
+</p>
 
-A simple and intuitive multi-step form implementation focused on user experience and accessibility.
+<h1 align="center">Japan Expat Tax Checker</h1>
 
-## Overview
+<p align="center"><strong>Know what you need to file in 2 minutes</strong></p>
 
-This project demonstrates a multi-step form using semantic HTML, vanilla JavaScript and CSS. It focusses UX and accessibility standards.
+<p align="center">
+  <a href="https://humancronadmin.github.io/japan-expat-tax-checker/"><img src="https://img.shields.io/badge/Live_Demo-Visit-4caf50?style=flat-square" alt="Live Demo"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" alt="MIT License"></a>
+</p>
+
+---
+
+## Why this tool?
+
+Every week on r/JapanFinance, US expats ask the same questions: "Do I need to file FBAR?" "Are my NISA gains taxable in the US?" "How do RSUs work across two tax systems?" The answers are scattered across Reddit threads, IRS pages, and expensive tax advisors.
+
+This tool gives you a personalized checklist in 2 minutes — for free.
 
 ## Features
 
-- Clean step-by-step form progression
-- Accessible form controls and navigation
-- Visual progress indicators
-- Form validation
-- Responsive design
-- Keyboard navigation support
+- **7-question decision tree** — tailored to your specific situation
+- **Covers key filings** — FBAR, FATCA Form 8938, RSU/stock option reporting, NISA/iDeCo implications, Foreign Tax Credit, wire transfer reporting
+- **Official links only** — every checklist item links to IRS.gov or Japan's National Tax Agency
+- **Mobile-friendly PWA** — works on any device, installable as an app
+- **No signup, no data collection** — zero tracking beyond anonymous GA4 page views
+- **Works offline** — cached via Service Worker after first visit
 
-## Technologies
+## How It Works
 
-- HTML
-- CSS
-- JavaScript
-- ARIA attributes for accessibility
+1. Click **"Start My Check"**
+2. Answer 7 quick questions about your tax situation
+3. Get your personalized filing checklist with deadlines and official links
 
-## JSFiddle
+**[Try it now →](https://humancronadmin.github.io/japan-expat-tax-checker/)**
 
-Here is a [link to a JSFiddle](https://jsfiddle.net/appel/15pn4b0j/) of the project you can start playing with. Contributed by GitHub user [@appel](https://github.com/appel).
+## Privacy
 
-## Getting Started
+This tool runs entirely in your browser. No answers are sent to any server. No cookies are set beyond standard analytics.
 
-1. Clone the repository:
+## Contributing
 
-```bash
-git clone https://github.com/yourusername/multi-step-form.git
-```
-
-2. Open `index.html` in your browser
-
-## Usage
-
-- Navigate through form steps using 'Next' and 'Previous' buttons
-- Required fields are clearly marked
-- Progress bar shows current position in the form flow
-- Form data is validated before proceeding to next step
-
-## Accessibility Features
-
-- ARIA labels and roles
-- Keyboard navigation
-- Clear focus states
-- Error messaging
-- Screen reader friendly
+1. Fork this repository
+2. Create your feature branch
+3. Submit a pull request
 
 ## License
 
-MIT License
+[MIT](LICENSE)
