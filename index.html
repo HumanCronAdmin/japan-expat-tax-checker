@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan Expat Tax Checker — Free Tax Filing Checklist for US Expats in Japan</title>
+    <meta name="description" content="Answer 7 quick questions and get your personalized tax filing checklist. Free tool for US citizens and green card holders living in Japan.">
+    <meta property="og:title" content="Japan Expat Tax Checker">
+    <meta property="og:description" content="Not sure what you need to file? 7 questions, 2 minutes, zero cost.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H1N5PR9Y0H"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-H1N5PR9Y0H');</script>
+</head>
+<body>
+    <header>
+        <h1>Japan Expat Tax Checker</h1>
+        <p class="subtitle">Free tool for US citizens &amp; green card holders in Japan</p>
+    </header>
+
+    <main id="app">
+        <section id="hero">
+            <h2>Do You Know What You Need to File?</h2>
+            <p>Answer 7 quick questions. Get your personalized tax filing checklist for free.</p>
+            <button id="startBtn" class="btn-primary">Start My Check</button>
+            <p class="hint">Takes about 2 minutes. No signup required.</p>
+        </section>
+
+        <section id="checker" style="display:none;">
+            <div id="progress"><div id="progressBar"></div></div>
+            <p id="stepInfo" role="status" aria-live="polite"></p>
+            <div id="questionArea"></div>
+            <div class="nav-arrows">
+                <button id="prevBtn" type="button" class="btn-nav" style="display:none;">&#8592; Back</button>
+                <button id="nextBtn" type="button" class="btn-nav btn-primary" style="display:none;">Next &#8594;</button>
+            </div>
+        </section>
+
+        <section id="results" style="display:none;">
+            <h2>Your Tax Filing Checklist</h2>
+            <p id="resultSummary"></p>
+            <div id="checklist"></div>
+            <div id="noItems" style="display:none;">
+                <p>Based on your answers, you may not have additional US filing requirements beyond your standard tax return. However, we recommend consulting a tax professional to confirm.</p>
+            </div>
+            <div class="cta-box">
+                <p><strong>Need professional help?</strong></p>
+                <a href="https://www.myexpattaxes.com/" target="_blank" rel="noopener" class="btn-primary">Find a Tax Professional</a>
+            </div>
+            <button id="restartBtn" class="btn-secondary">Start Over</button>
+        </section>
+    </main>
+
+    <div class="disclaimer">
+        <p><strong>Disclaimer:</strong> This tool provides general guidance only and does not constitute tax, legal, or financial advice. Tax laws change frequently. Always consult a qualified tax professional for advice specific to your situation.</p>
+    </div>
+
+    <footer id="site-footer"></footer>
+
+    <p style="text-align:center;font-size:0.8rem;color:#999;margin-top:1rem;">
+        Part of <a href="https://humancronadmin.github.io/japan-advanced-finance/" style="color:#2196f3;">Japan Advanced Finance</a> tools
+    </p>
+
+    <script src="data/questions.js"></script>
+    <script src="data/results.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

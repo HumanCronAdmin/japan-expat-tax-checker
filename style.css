@@ -1,0 +1,151 @@
+:root {
+    --primary: #1e3a5f;
+    --primary-light: #2c5282;
+    --accent: #2196f3;
+    --green: #4caf50;
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --text: #1a1a1a;
+    --text-light: #64748b;
+    --radius: 12px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    background: var(--bg);
+    color: var(--text);
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 20px 16px;
+}
+header { text-align: center; padding: 24px 0 8px; }
+h1 { font-size: 1.5rem; font-weight: 700; color: var(--primary); }
+.subtitle { font-size: 0.85rem; color: var(--text-light); margin-top: 4px; }
+h2 { font-size: 1.25rem; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+main { background: var(--card); border-radius: var(--radius); padding: 28px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+#hero { text-align: center; }
+#hero p { color: var(--text-light); font-size: 0.95rem; margin-bottom: 16px; }
+.hint { font-size: 0.8rem; color: var(--text-light); margin-top: 8px; }
+.btn-primary {
+    display: inline-block;
+    padding: 12px 28px;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    min-height: 44px;
+    transition: background 0.2s;
+}
+.btn-primary:hover { background: #1976d2; }
+.btn-secondary {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-top: 16px;
+    min-height: 44px;
+}
+.btn-secondary:hover { background: #e3f2fd; }
+#progress {
+    width: 100%;
+    height: 6px;
+    background: #e2e8f0;
+    border-radius: 3px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+#progressBar {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 3px;
+    transition: width 0.3s ease;
+    width: 0%;
+}
+#stepInfo { font-size: 0.8rem; color: var(--text-light); margin-bottom: 16px; }
+#questionArea h3 { font-size: 1.05rem; font-weight: 600; margin-bottom: 16px; color: var(--text); }
+.option-btn {
+    display: block;
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    background: #f1f5f9;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 0.95rem;
+    cursor: pointer;
+    min-height: 44px;
+    transition: all 0.15s;
+    color: var(--text);
+}
+.option-btn:hover { border-color: var(--accent); background: #e3f2fd; }
+.option-btn.selected { border-color: var(--accent); background: #e3f2fd; font-weight: 600; }
+.nav-arrows { display: flex; justify-content: space-between; margin-top: 20px; }
+.btn-nav {
+    padding: 10px 20px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background: var(--card);
+    cursor: pointer;
+    font-size: 0.9rem;
+    min-height: 44px;
+    color: var(--text);
+}
+.btn-nav:hover { background: #f1f5f9; }
+.checklist-item {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 12px;
+}
+.checklist-item h4 {
+    color: var(--green);
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+}
+.checklist-item h4::before { content: "\2713 "; }
+.checklist-item p { font-size: 0.85rem; color: var(--text-light); margin-bottom: 6px; }
+.checklist-item a {
+    font-size: 0.8rem;
+    color: var(--accent);
+    text-decoration: none;
+}
+.checklist-item a:hover { text-decoration: underline; }
+.checklist-item .deadline { font-size: 0.8rem; color: #b45309; font-weight: 600; }
+.cta-box {
+    background: linear-gradient(135deg, #eff6ff, #dbeafe);
+    border: 1px solid #93c5fd;
+    border-radius: var(--radius);
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+}
+.cta-box p { margin-bottom: 12px; color: var(--primary); }
+#resultSummary { color: var(--text-light); font-size: 0.9rem; margin-bottom: 16px; }
+.disclaimer {
+    margin-top: 20px;
+    padding: 12px 16px;
+    background: #fff7ed;
+    border: 1px solid #fed7aa;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    color: #92400e;
+}
+footer { margin-top: 16px; }
+@media (max-width: 480px) {
+    body { padding: 12px 10px; }
+    main { padding: 20px 16px; }
+    h1 { font-size: 1.3rem; }
+    .option-btn { padding: 12px 14px; }
+}
